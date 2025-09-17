@@ -9,24 +9,28 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts - Montserrat -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Tailwind Custom Config -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'custom-blue': '#040345',
-            'light-blue': '#b3e5fc',
-            'hover-blue': '#e0f7fa',
-            'accent-white': '#ffffff',
-            'brand-blue': '#5317a6',
-          }
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'custom-blue': '#040345',
+          'light-blue': '#b3e5fc',
+          'hover-blue': '#e0f7fa',
+          'accent-white': '#ffffff',
+          'brand-blue': '#5317a6',
+        },
+        fontFamily: {
+          montserrat: ['Montserrat', 'sans-serif'],
         }
       }
     }
-  </script>
+  }
+</script>
+
 
   <!-- EmailJS -->
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
@@ -37,7 +41,8 @@
   </script>
 </head>
 
-<body class="bg-custom-blue text-white min-h-screen">
+<body class="bg-custom-blue text-white min-h-screen font-montserrat">
+
 
   <!-- HEADER -->
   <header class="bg-white shadow-md fixed w-full z-50">
