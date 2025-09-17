@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debest Creative - About Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'custom-blue': '#0a2e4a',
+            'light-blue': '#b3e5fc',
+            'hover-blue': '#e0f7fa'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-custom-blue text-white">
+<!-- Header Section -->
+<header class="bg-white shadow-md">
+  <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <!-- Logo + Site Name -->
+    <a href="#home" class="flex items-center space-x-2">
+      <img src="./image/MY LOGO.png" alt="Debest Logo" class="h-10 w-auto">
+      </a>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:block">
+      <ul class="flex space-x-4 md:space-x-8">
+        <li><a href="#home" class="font-medium text-custom-blue hover:text-orange-500 transition">HOME</a></li>
+        <li><a href="#about" class="font-medium text-custom-blue hover:text-orange-500 transition">ABOUT</a></li>
+        <li><a href="#services" class="font-medium text-custom-blue hover:text-orange-500 transition">SERVICES</a></li>
+        <li><a href="#portfolio" class="font-medium text-custom-blue hover:text-orange-500 transition">PORTFOLIO</a></li>
+        <li><a href="#contact" class="font-medium text-custom-blue hover:text-orange-500 transition">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button id="mobileMenuBtn" class="md:hidden text-custom-blue focus:outline-none">
+      <i class="fas fa-bars text-xl"></i>
+    </button>
+  </div>
+</header>
+ <!-- Mobile Navigation Menu -->
+<nav id="mobileMenu" class="hidden md:hidden bg-blue-900/90 backdrop-blur-sm fixed top-0 left-0 w-full h-full z-50 pt-20 px-6">
+  <button id="closeMobileMenu" class="absolute top-6 right-6 text-white text-2xl">
+    <i class="fas fa-times"></i>
+  </button>
+
+  <!-- Logo inside mobile menu -->
+  <div class="flex justify-center mb-6">
+    <img src="./image/MY LOGO.png" alt="Debest Logo" class="h-16 w-auto">
+  </div>
+
+  <ul class="flex flex-col space-y-6 text-center">
+    <li><a href="#home" class="hover:text-light-blue text-xl">HOME</a></li>
+   <li><a href="#services" class="hover:text-light-blue text-xl">SERVICES</a></li>
+    <li><a href="#portfolio" class="hover:text-light-blue text-xl">PORTFOLIO</a></li>
+    <li><a href="#contact" class="hover:text-light-blue text-xl">CONTACT</a></li>
+  </ul>
+</nav>
+
+<!-- About Section -->
+<section id="about" class="container mx-auto px-4 py-16">
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Left Side: Circle Image -->
+    <div class="flex justify-center">
+      <div class="w-64 h-64 rounded-full overflow-hidden shadow-2xl">
+        <img src="image/debest.png" alt="Founder - Debest Creative" class="w-full h-full object-cover">
+      </div>
+    </div>
+
+    <!-- Right Side: About Box -->
+    <div class="bg-white shadow-2xl rounded-xl p-8 text-center md:text-left">
+      <!-- About Us Heading -->
+      <h2 class="text-3xl md:text-4xl font-bold text-custom-blue text-center mb-6">About Us</h2>
+
+      <!-- About Text -->
+      <p class="text-custom-blue text-lg leading-relaxed mb-6">
+        I’m a passionate <span class="font-semibold">Graphic Designer</span> currently 
+        expanding my skills into <span class="font-semibold">UI/UX design</span> to craft seamless 
+        digital experiences. Over the past years, I’ve worked with <span class="font-semibold">Web3 projects</span>, 
+        creating visual identities and graphics that stand out in a fast-evolving space.
+      </p>
+
+      <p class="text-custom-blue text-lg leading-relaxed mb-6">
+        As I grow into web and app design, I’m exploring how creativity and usability merge 
+        to deliver intuitive, human-centered solutions. My mission is simple: 
+        <span class="italic">designs that not only look good but work beautifully.</span>
+      </p>
+
+      <!-- Highlights -->
+      <div class="bg-custom-blue/10 rounded-lg p-6 mb-6">
+        <h3 class="text-xl font-bold text-custom-blue mb-4 text-center">Highlights:</h3>
+        <ul class="list-disc list-inside space-y-2 text-custom-blue text-left">
+          <li>🎨 Strong background in graphic design & branding</li>
+          <li>🌐 Experience designing for Web3 projects</li>
+          <li>📱 Currently learning UI/UX for web & mobile applications</li>
+          <li>🔮 Dividing my portfolio into Web2 and Web3 journeys</li>
+        </ul>
+      </div>
+
+      <!-- Founder & Location -->
+      <div class="space-y-2 text-custom-blue">
+        <p><span class="font-semibold">Founder:</span> Blessed Tony</p>
+        <p><span class="font-semibold">Location:</span> Nigeria</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-white py-8 text-center text-custom-blue mt-12">
+  <p>&copy; 2025 Debest Creative. All rights reserved.</p>
+  <div class="flex justify-center space-x-6 mt-4">
+    <a href="#" class="hover:text-orange-500"><i class="fab fa-facebook"></i></a>
+    <a href="#" class="hover:text-orange-500"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="hover:text-orange-500"><i class="fab fa-twitter"></i></a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
