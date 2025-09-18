@@ -52,3 +52,16 @@ modal.addEventListener('click', (e) => {
     modal.classList.remove('flex');
   }
 });
+
+
+function toggleDescription(el) {
+  const desc = el.querySelector("div:last-child");
+
+  if (desc.classList.contains("opacity-0")) {
+    desc.classList.remove("opacity-0", "max-h-0");
+    desc.classList.add("opacity-100", "max-h-20");
+  } else {
+    desc.classList.add("opacity-0", "max-h-0");
+    desc.classList.remove("opacity-100", "max-h-20");
+  }
+}
