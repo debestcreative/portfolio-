@@ -58,7 +58,7 @@
         <ul class="flex space-x-8">
           <li><a href="index.html" class="font-medium text-custom-blue hover:text-orange-500 transition">Home</a></li>
           <li><a href="about.html" class="font-medium text-custom-blue hover:text-orange-500 transition">About</a></li>
-          <li><a href="#skill" class="font-medium text-custom-blue hover:text-orange-500 transition">Skills</a></li>
+          <li><a href="#skills" class="font-medium text-custom-blue hover:text-orange-500 transition">Skills</a></li>
           <li><a href="portfolio.html" class="font-medium text-custom-blue hover:text-orange-500 transition">Portfolio</a></li>
           <li><a href="#contact" class="font-medium text-custom-blue hover:text-orange-500 transition">Contact</a></li>
         </ul>
@@ -82,8 +82,8 @@
     <ul class="flex flex-col space-y-8 text-center text-lg font-medium">
       <li><a href="index.html" class="hover:text-light-blue">Home</a></li>
       <li><a href="about.html" class="hover:text-light-blue">About</a></li>
-      <li><a href="#skill" class="hover:text-light-blue">Skills</a></li>
-      <li><a href="portfolio.html" class="hover:text-light-blue">Portfolio</a></li>
+    <li><a href="#skills" class="font-medium text-custom-blue hover:text-orange-500 transition">Skills</a></li>
+    <li><a href="portfolio.html" class="hover:text-light-blue">Portfolio</a></li>
       <li><a href="#contact" class="hover:text-light-blue">Contact</a></li>
     </ul>
   </nav>
@@ -95,7 +95,7 @@
         
         <!-- LEFT: Hero text -->
         <div class="text-center md:text-left">
-          <p class="sentencecase text-sm tracking-wide text-accent-white/80 mb-3">Hello There!</p>
+          <p class="normal-case text-sm tracking-wide text-accent-white/80 mb-3">Hello There!</p>
           <h1 class="text-3xl md:text-4xl font-bold mb-6">
   I'm <span class="text-sky-blue">Debest Creative</span>
 </h1>
@@ -166,56 +166,92 @@
   <div class="container mx-auto px-6">
     <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">My Skills</h2>
 
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-12 text-center">
+    <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-12 text-center">
 
-      <!-- Web2 Design -->
+      <!-- Adobe Photoshop -->
       <div class="flex flex-col items-center">
         <div class="relative w-40 h-40">
           <svg class="w-full h-full transform -rotate-90">
-            <!-- Background circle -->
             <circle cx="80" cy="80" r="70" stroke="white" stroke-opacity="0.2" stroke-width="12" fill="none"/>
-            <!-- Progress circle -->
-            <circle cx="80" cy="80" r="70" stroke="white" stroke-width="12" fill="none"
-              stroke-dasharray="439.82" stroke-dashoffset="8.8" stroke-linecap="round"/>
-          </svg>
-          <span class="absolute inset-0 flex items-center justify-center text-2xl font-bold text-white">98%</span>
-        </div>
-        <p class="mt-4 text-lg text-white font-semibold">Web2 Design</p>
-      </div>
-
-      <!-- UI/UX -->
-      <div class="flex flex-col items-center">
-        <div class="relative w-40 h-40">
-          <svg class="w-full h-full transform -rotate-90">
-            <!-- Background circle -->
-            <circle cx="80" cy="80" r="70" stroke="white" stroke-opacity="0.2" stroke-width="12" fill="none"/>
-            <!-- Progress circle -->
-            <circle cx="80" cy="80" r="70" stroke="white" stroke-width="12" fill="none"
+            <circle cx="80" cy="80" r="70" stroke="#00ccff" stroke-width="12" fill="none"
               stroke-dasharray="439.82" stroke-dashoffset="44" stroke-linecap="round"/>
           </svg>
-          <span class="absolute inset-0 flex items-center justify-center text-2xl font-bold text-white">90%</span>
+          <span class="absolute inset-0 flex flex-col items-center justify-center text-white">
+            <i class="fas fa-camera-retro text-4xl mb-1 text-sky-blue"></i>
+            <span class="text-xl font-bold">90%</span>
+          </span>
         </div>
-        <p class="mt-4 text-lg text-white font-semibold">UI/UX</p>
+        <p class="mt-4 text-lg text-white font-semibold">Adobe Photoshop</p>
       </div>
 
-      <!-- Web3 Design -->
+      <!-- Adobe Illustrator -->
       <div class="flex flex-col items-center">
         <div class="relative w-40 h-40">
           <svg class="w-full h-full transform -rotate-90">
-            <!-- Background circle -->
             <circle cx="80" cy="80" r="70" stroke="white" stroke-opacity="0.2" stroke-width="12" fill="none"/>
-            <!-- Progress circle -->
-            <circle cx="80" cy="80" r="70" stroke="white" stroke-width="12" fill="none"
-              stroke-dasharray="439.82" stroke-dashoffset="4.4" stroke-linecap="round"/>
+            <circle cx="80" cy="80" r="70" stroke="#ff9800" stroke-width="12" fill="none"
+              stroke-dasharray="439.82" stroke-dashoffset="66" stroke-linecap="round"/>
           </svg>
-          <span class="absolute inset-0 flex items-center justify-center text-2xl font-bold text-white">99%</span>
+          <span class="absolute inset-0 flex flex-col items-center justify-center text-white">
+            <i class="fas fa-pen-fancy text-4xl mb-1 text-orange-400"></i>
+            <span class="text-xl font-bold">85%</span>
+          </span>
         </div>
-        <p class="mt-4 text-lg text-white font-semibold">Web3 Design</p>
+        <p class="mt-4 text-lg text-white font-semibold">Adobe Illustrator</p>
+      </div>
+
+      <!-- CorelDraw -->
+      <div class="flex flex-col items-center">
+        <div class="relative w-40 h-40">
+          <svg class="w-full h-full transform -rotate-90">
+            <circle cx="80" cy="80" r="70" stroke="white" stroke-opacity="0.2" stroke-width="12" fill="none"/>
+            <circle cx="80" cy="80" r="70" stroke="#4caf50" stroke-width="12" fill="none"
+              stroke-dasharray="439.82" stroke-dashoffset="66" stroke-linecap="round"/>
+          </svg>
+          <span class="absolute inset-0 flex flex-col items-center justify-center text-white">
+            <i class="fas fa-draw-polygon text-4xl mb-1 text-green-400"></i>
+            <span class="text-xl font-bold">85%</span>
+          </span>
+        </div>
+        <p class="mt-4 text-lg text-white font-semibold">CorelDraw</p>
+      </div>
+
+      <!-- Figma -->
+      <div class="flex flex-col items-center">
+        <div class="relative w-40 h-40">
+          <svg class="w-full h-full transform -rotate-90">
+            <circle cx="80" cy="80" r="70" stroke="white" stroke-opacity="0.2" stroke-width="12" fill="none"/>
+            <circle cx="80" cy="80" r="70" stroke="#a855f7" stroke-width="12" fill="none"
+              stroke-dasharray="439.82" stroke-dashoffset="88" stroke-linecap="round"/>
+          </svg>
+          <span class="absolute inset-0 flex flex-col items-center justify-center text-white">
+            <i class="fab fa-figma text-4xl mb-1 text-purple-400"></i>
+            <span class="text-xl font-bold">80%</span>
+          </span>
+        </div>
+        <p class="mt-4 text-lg text-white font-semibold">Figma</p>
+      </div>
+
+      <!-- Adobe XD -->
+      <div class="flex flex-col items-center">
+        <div class="relative w-40 h-40">
+          <svg class="w-full h-full transform -rotate-90">
+            <circle cx="80" cy="80" r="70" stroke="white" stroke-opacity="0.2" stroke-width="12" fill="none"/>
+            <circle cx="80" cy="80" r="70" stroke="#e91e63" stroke-width="12" fill="none"
+              stroke-dasharray="439.82" stroke-dashoffset="132" stroke-linecap="round"/>
+          </svg>
+          <span class="absolute inset-0 flex flex-col items-center justify-center text-white">
+            <i class="fas fa-bezier-curve text-4xl mb-1 text-pink-400"></i>
+            <span class="text-xl font-bold">70%</span>
+          </span>
+        </div>
+        <p class="mt-4 text-lg text-white font-semibold">Adobe XD</p>
       </div>
 
     </div>
   </div>
 </section>
+
 
 <!-- PORTFOLIO -->
 <section id="portfolio" class="w-full bg-custom-blue py-20">
@@ -278,8 +314,8 @@
 </div>
 
   <!-- CONTACT -->
-  <section id="contact" class="bg-#5317a6-900 py-20 px-6">
-    <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Contact Us</h2>
+<section id="contact" class="bg-brand-blue py-20 px-6">
+  <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">Contact Us</h2>
     <form id="contactForm" class="max-w-2xl mx-auto grid gap-6">
       <input type="text" name="user_name" placeholder="Your Name" required 
         class="w-full p-4 rounded-lg text-black focus:outline-none">
@@ -289,11 +325,10 @@
         class="w-full p-4 rounded-lg text-black focus:outline-none">
       <textarea name="message" placeholder="Your Message" rows="5" required 
         class="w-full p-4 rounded-lg text-black focus:outline-none"></textarea>
-      <button type="submit" 
-        class="px-6 py-3 bg-light-blue text-sky-blue font-semibold rounded-lg hover:bg-hover-blue transition">
-        Send Message
-      </button>
-    </form>
+    <button type="submit" class="px-6 py-3 bg-sky-blue text-white font-semibold rounded-lg hover:bg-hover-blue transition">
+  Send Message
+</button>
+ </form>
   </section>
 
   <!-- FOOTER -->
