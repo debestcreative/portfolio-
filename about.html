@@ -6,6 +6,8 @@
   <title>Debest Creative - About Us</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Tailwind Config -->
   <script>
     tailwind.config = {
       theme: {
@@ -21,13 +23,14 @@
   </script>
 </head>
 <body class="bg-custom-blue text-white">
+
 <!-- Header Section -->
 <header class="bg-white shadow-md">
   <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-    <!-- Logo + Site Name -->
+    <!-- Logo -->
     <a href="#home" class="flex items-center space-x-2">
       <img src="./image/MY LOGO.png" alt="Debest Logo" class="h-10 w-auto">
-      </a>
+    </a>
 
     <!-- Desktop Menu -->
     <nav class="hidden md:block">
@@ -43,7 +46,8 @@
     </button>
   </div>
 </header>
- <!-- Mobile Navigation Menu -->
+
+<!-- Mobile Navigation Menu -->
 <nav id="mobileMenu" class="hidden md:hidden bg-blue-900/90 backdrop-blur-sm fixed top-0 left-0 w-full h-full z-50 pt-20 px-6">
   <button id="closeMobileMenu" class="absolute top-6 right-6 text-white text-2xl">
     <i class="fas fa-times"></i>
@@ -57,93 +61,129 @@
   <ul class="flex flex-col space-y-6 text-center">
     <li><a href="index.html" class="hover:text-light-blue text-xl">HOME</a></li>
     <li><a href="portfolio.html" class="hover:text-light-blue text-xl">PORTFOLIO</a></li>
-</ul>
+  </ul>
 </nav>
-<!-- SKILLS -->
+
+<!-- ABOUT -->
+<section id="about" class="w-full bg-custom-blue py-20">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-20">
+    <!-- Always 2 columns -->
+    <div class="grid grid-cols-2 gap-4 sm:gap-8 items-center">
+      
+      <!-- About Text -->
+      <div class="min-w-0">
+        <h2 class="text-xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-6 text-white">About Me</h2>
+        <p class="text-sm sm:text-lg leading-relaxed mb-3 sm:mb-6 text-white">
+          I’m <span class="font-semibold">Debest Creative</span>, a Graphic and 
+          <span class="font-semibold">UI/UX Designer</span> who helps startups and 
+          <span class="font-semibold">Web3 projects</span> grow through branding, 
+          visual storytelling, and user-centered digital experiences.
+        </p>
+        <p class="text-sm sm:text-lg leading-relaxed text-white">
+          Using tools like <span class="font-semibold">Adobe Photoshop, Illustrator, 
+          and Figma</span>, I craft designs that communicate clear messages and help 
+          clients stand out. Explore my portfolio or get in touch to discuss your project.
+        </p>
+      </div>
+
+      <!-- About Image -->
+      <div class="flex items-center justify-center">
+        <img src="./image/aboutme.png" alt="Founder"
+             class="w-full h-auto max-w-[300px] sm:max-w-[400px] object-contain">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
 <section id="skills" class="w-full bg-accent-white/5 py-20">
   <div class="container mx-auto px-6">
     <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">My Skills</h2>
 
-    <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-12 text-center">
+    <!-- 2 per row on mobile, 3 on tablet, 5 on desktop -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 text-center">
 
       <!-- Adobe Photoshop -->
       <div class="flex flex-col items-center">
-        <div class="relative w-40 h-40">
-          <svg class="w-full h-full transform -rotate-90">
+        <div class="relative w-28 h-28 sm:w-36 sm:h-36 lg:w-40 lg:h-40">
+          <svg viewBox="0 0 160 160" class="w-full h-full transform -rotate-90">
             <circle cx="80" cy="80" r="70" stroke="white" stroke-opacity="0.2" stroke-width="12" fill="none"/>
             <circle cx="80" cy="80" r="70" stroke="#00ccff" stroke-width="12" fill="none"
               stroke-dasharray="439.82" stroke-dashoffset="44" stroke-linecap="round"/>
           </svg>
           <span class="absolute inset-0 flex flex-col items-center justify-center text-white">
-            <i class="fas fa-camera-retro text-4xl mb-1 text-sky-blue"></i>
-            <span class="text-xl font-bold">90%</span>
+            <i class="fas fa-camera-retro text-2xl sm:text-3xl lg:text-4xl mb-1 text-sky-blue"></i>
+            <span class="text-base sm:text-lg lg:text-xl font-bold">90%</span>
           </span>
         </div>
-        <p class="mt-4 text-lg text-white font-semibold">Adobe Photoshop</p>
+        <p class="mt-3 text-sm sm:text-base lg:text-lg text-white font-semibold">Adobe Photoshop</p>
       </div>
 
       <!-- Adobe Illustrator -->
       <div class="flex flex-col items-center">
-        <div class="relative w-40 h-40">
-          <svg class="w-full h-full transform -rotate-90">
+        <div class="relative w-28 h-28 sm:w-36 sm:h-36 lg:w-40 lg:h-40">
+          <svg viewBox="0 0 160 160" class="w-full h-full transform -rotate-90">
             <circle cx="80" cy="80" r="70" stroke="white" stroke-opacity="0.2" stroke-width="12" fill="none"/>
             <circle cx="80" cy="80" r="70" stroke="#ff9800" stroke-width="12" fill="none"
               stroke-dasharray="439.82" stroke-dashoffset="66" stroke-linecap="round"/>
           </svg>
           <span class="absolute inset-0 flex flex-col items-center justify-center text-white">
-            <i class="fas fa-pen-fancy text-4xl mb-1 text-orange-400"></i>
-            <span class="text-xl font-bold">85%</span>
+            <i class="fas fa-pen-fancy text-2xl sm:text-3xl lg:text-4xl mb-1 text-orange-400"></i>
+            <span class="text-base sm:text-lg lg:text-xl font-bold">85%</span>
           </span>
         </div>
-        <p class="mt-4 text-lg text-white font-semibold">Adobe Illustrator</p>
+        <p class="mt-3 text-sm sm:text-base lg:text-lg text-white font-semibold">Adobe Illustrator</p>
       </div>
 
       <!-- CorelDraw -->
       <div class="flex flex-col items-center">
-        <div class="relative w-40 h-40">
-          <svg class="w-full h-full transform -rotate-90">
+        <div class="relative w-28 h-28 sm:w-36 sm:h-36 lg:w-40 lg:h-40">
+          <svg viewBox="0 0 160 160" class="w-full h-full transform -rotate-90">
             <circle cx="80" cy="80" r="70" stroke="white" stroke-opacity="0.2" stroke-width="12" fill="none"/>
             <circle cx="80" cy="80" r="70" stroke="#4caf50" stroke-width="12" fill="none"
               stroke-dasharray="439.82" stroke-dashoffset="66" stroke-linecap="round"/>
           </svg>
           <span class="absolute inset-0 flex flex-col items-center justify-center text-white">
-            <i class="fas fa-draw-polygon text-4xl mb-1 text-green-400"></i>
-            <span class="text-xl font-bold">85%</span>
+            <i class="fas fa-draw-polygon text-2xl sm:text-3xl lg:text-4xl mb-1 text-green-400"></i>
+            <span class="text-base sm:text-lg lg:text-xl font-bold">85%</span>
           </span>
         </div>
-        <p class="mt-4 text-lg text-white font-semibold">CorelDraw</p>
+        <p class="mt-3 text-sm sm:text-base lg:text-lg text-white font-semibold">CorelDraw</p>
       </div>
 
       <!-- Figma -->
       <div class="flex flex-col items-center">
-        <div class="relative w-40 h-40">
-          <svg class="w-full h-full transform -rotate-90">
+        <div class="relative w-28 h-28 sm:w-36 sm:h-36 lg:w-40 lg:h-40">
+          <svg viewBox="0 0 160 160" class="w-full h-full transform -rotate-90">
             <circle cx="80" cy="80" r="70" stroke="white" stroke-opacity="0.2" stroke-width="12" fill="none"/>
             <circle cx="80" cy="80" r="70" stroke="#a855f7" stroke-width="12" fill="none"
               stroke-dasharray="439.82" stroke-dashoffset="88" stroke-linecap="round"/>
           </svg>
           <span class="absolute inset-0 flex flex-col items-center justify-center text-white">
-            <i class="fab fa-figma text-4xl mb-1 text-purple-400"></i>
-            <span class="text-xl font-bold">80%</span>
+            <i class="fab fa-figma text-2xl sm:text-3xl lg:text-4xl mb-1 text-purple-400"></i>
+            <span class="text-base sm:text-lg lg:text-xl font-bold">80%</span>
           </span>
         </div>
-        <p class="mt-4 text-lg text-white font-semibold">Figma</p>
+        <p class="mt-3 text-sm sm:text-base lg:text-lg text-white font-semibold">Figma</p>
       </div>
 
       <!-- Adobe XD -->
       <div class="flex flex-col items-center">
-        <div class="relative w-40 h-40">
-          <svg class="w-full h-full transform -rotate-90">
+        <div class="relative w-28 h-28 sm:w-36 sm:h-36 lg:w-40 lg:h-40">
+          <svg viewBox="0 0 160 160" class="w-full h-full transform -rotate-90">
             <circle cx="80" cy="80" r="70" stroke="white" stroke-opacity="0.2" stroke-width="12" fill="none"/>
             <circle cx="80" cy="80" r="70" stroke="#e91e63" stroke-width="12" fill="none"
               stroke-dasharray="439.82" stroke-dashoffset="132" stroke-linecap="round"/>
           </svg>
           <span class="absolute inset-0 flex flex-col items-center justify-center text-white">
-            <i class="fas fa-bezier-curve text-4xl mb-1 text-pink-400"></i>
-            <span class="text-xl font-bold">70%</span>
+            <i class="fas fa-bezier-curve text-2xl sm:text-3xl lg:text-4xl mb-1 text-pink-400"></i>
+            <span class="text-base sm:text-lg lg:text-xl font-bold">70%</span>
           </span>
         </div>
-        <p class="mt-4 text-lg text-white font-semibold">Adobe XD</p>
+        <p class="mt-3 text-sm sm:text-base lg:text-lg text-white font-semibold">Adobe XD</p>
       </div>
 
     </div>
@@ -151,40 +191,7 @@
 </section>
 
 
-
-<!-- ABOUT -->
-  <section id="about" class="w-full bg-white py-20">
-    <div class="container mx-auto px-6 lg:px-20">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        
-        <!-- About Text -->
-<div>
-  <h2 class="text-3xl md:text-4xl font-bold mb-6 text-black">About Me</h2>
-  <p class="text-lg leading-relaxed mb-6 text-black">
-    I’m <span class="font-semibold">Debest Creative</span>, a Graphic and 
-    <span class="font-semibold">UI/UX Designer</span> who helps startups and 
-    <span class="font-semibold">Web3 projects</span> grow through branding, 
-    visual storytelling, and user-centered digital experiences.
-  </p>
-  <p class="text-lg leading-relaxed text-black">
-    Using tools like <span class="font-semibold">Adobe Photoshop, Illustrator, 
-    and Figma</span>, I craft designs that communicate clear messages and help 
-    clients stand out. Explore my portfolio or get in touch to discuss your project.
-  </p>
-</div>
-
-<!-- About Image -->
-      <div class="flex items-center justify-center">
-  <img src="./image/aboutme.png" alt="Founder" 
-       class="w-[400px] h-[400px] object-cover">
-</div>
-</div>
-</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
+<!-- Footer -->
 <footer class="bg-white py-8 text-center text-custom-blue mt-12">
   <p>&copy; 2025 Debest Creative. All rights reserved.</p>
   <div class="flex justify-center space-x-6 mt-4">

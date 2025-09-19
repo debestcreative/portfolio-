@@ -119,38 +119,6 @@
     <a href="#" class="hover:text-orange-500"><i class="fab fa-twitter"></i></a>
   </div>
 </footer>
-
-
-<!-- Script for Modal -->
-<script>
-  // Select all portfolio images
-  const images = document.querySelectorAll('.portfolio-img');
-  const modal = document.getElementById('imageModal');
-  const modalImg = document.getElementById('modalImg');
-  const closeModal = document.getElementById('closeModal');
-
-  // Open modal and set clicked image
-  images.forEach(img => {
-    img.addEventListener('click', () => {
-      modal.classList.remove('hidden');
-      modalImg.src = img.src;
-    });
-  });
-
-  // Close modal when clicking the close button
-  closeModal.addEventListener('click', () => {
-    modal.classList.add('hidden');
-    modalImg.src = ''; // Clear src for safety
-  });
-
-  // Optional: Close modal if clicking outside the image
-  modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      modal.classList.add('hidden');
-      modalImg.src = '';
-    }
-  });
-</script>
 <script src="script.js"></script>
 </body>
 </html>
