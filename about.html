@@ -13,9 +13,11 @@
       theme: {
         extend: {
           colors: {
-            'custom-blue': '#0a2e4a',
-            'light-blue': '#b3e5fc',
-            'hover-blue': '#e0f7fa'
+           'custom-blue': '#040345',
+          'sky-blue': '#00ccff',
+          'hover-blue': '#e0f7fa',
+          'accent-white': '#ffffff',
+          'brand-blue': '#5317a6',
           }
         }
       }
@@ -67,13 +69,19 @@
 <!-- ABOUT -->
 <section id="about" class="w-full bg-custom-blue py-20">
   <div class="container mx-auto px-4 sm:px-6 lg:px-20">
-    <!-- Always 2 columns -->
-    <div class="grid grid-cols-2 gap-4 sm:gap-8 items-center">
+    <!-- 1 column on mobile, 2 columns on medium+ -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8 items-center">
       
-      <!-- About Text -->
-      <div class="min-w-0">
+      <!-- About Image (first on mobile) -->
+      <div class="flex items-center justify-center order-1 md:order-2">
+        <img src="./image/aboutme.png" alt="Founder"
+             class="w-full h-auto max-w-[300px] sm:max-w-[400px] object-contain">
+      </div>
+
+      <!-- About Text (second on mobile, first on desktop) -->
+      <div class="min-w-0 order-2 md:order-1">
         <h2 class="text-xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-6 text-white">About Me</h2>
-        <p class="text-sm sm:text-lg leading-relaxed mb-3 sm:mb-6 text-white">
+        <p class="text-sm sm:text-lg leading-relaxed mb-3 sm:mb-6-white">
           I’m <span class="font-semibold">Debest Creative</span>, a Graphic and 
           <span class="font-semibold">UI/UX Designer</span> who helps startups and 
           <span class="font-semibold">Web3 projects</span> grow through branding, 
@@ -86,22 +94,13 @@
         </p>
       </div>
 
-      <!-- About Image -->
-      <div class="flex items-center justify-center">
-        <img src="./image/aboutme.png" alt="Founder"
-             class="w-full h-auto max-w-[300px] sm:max-w-[400px] object-contain">
-      </div>
     </div>
   </div>
 </section>
 
-
-
-
-
-<section id="skills" class="w-full bg-accent-white/5 py-20">
+<section id="skills" class="w-full bg-accent-white py-20">
   <div class="container mx-auto px-6">
-    <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">My Skills</h2>
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-black mb-12">My Skills</h2>
 
     <!-- 2 per row on mobile, 3 on tablet, 5 on desktop -->
     <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 text-center">
@@ -114,12 +113,12 @@
             <circle cx="80" cy="80" r="70" stroke="#00ccff" stroke-width="12" fill="none"
               stroke-dasharray="439.82" stroke-dashoffset="44" stroke-linecap="round"/>
           </svg>
-          <span class="absolute inset-0 flex flex-col items-center justify-center text-white">
+          <span class="absolute inset-0 flex flex-col items-center justify-center text-custom-blue">
             <i class="fas fa-camera-retro text-2xl sm:text-3xl lg:text-4xl mb-1 text-sky-blue"></i>
             <span class="text-base sm:text-lg lg:text-xl font-bold">90%</span>
           </span>
         </div>
-        <p class="mt-3 text-sm sm:text-base lg:text-lg text-white font-semibold">Adobe Photoshop</p>
+        <p class="mt-3 text-sm sm:text-base lg:text-lg text-custom-blue font-semibold">Adobe Photoshop</p>
       </div>
 
       <!-- Adobe Illustrator -->
@@ -130,12 +129,12 @@
             <circle cx="80" cy="80" r="70" stroke="#ff9800" stroke-width="12" fill="none"
               stroke-dasharray="439.82" stroke-dashoffset="66" stroke-linecap="round"/>
           </svg>
-          <span class="absolute inset-0 flex flex-col items-center justify-center text-white">
+          <span class="absolute inset-0 flex flex-col items-center justify-center text-custom-blue">
             <i class="fas fa-pen-fancy text-2xl sm:text-3xl lg:text-4xl mb-1 text-orange-400"></i>
             <span class="text-base sm:text-lg lg:text-xl font-bold">85%</span>
           </span>
         </div>
-        <p class="mt-3 text-sm sm:text-base lg:text-lg text-white font-semibold">Adobe Illustrator</p>
+        <p class="mt-3 text-sm sm:text-base lg:text-lg text-custom-blue font-semibold">Adobe Illustrator</p>
       </div>
 
       <!-- CorelDraw -->
@@ -146,12 +145,12 @@
             <circle cx="80" cy="80" r="70" stroke="#4caf50" stroke-width="12" fill="none"
               stroke-dasharray="439.82" stroke-dashoffset="66" stroke-linecap="round"/>
           </svg>
-          <span class="absolute inset-0 flex flex-col items-center justify-center text-white">
+          <span class="absolute inset-0 flex flex-col items-center justify-center text-custom-blue">
             <i class="fas fa-draw-polygon text-2xl sm:text-3xl lg:text-4xl mb-1 text-green-400"></i>
             <span class="text-base sm:text-lg lg:text-xl font-bold">85%</span>
           </span>
         </div>
-        <p class="mt-3 text-sm sm:text-base lg:text-lg text-white font-semibold">CorelDraw</p>
+        <p class="mt-3 text-sm sm:text-base lg:text-lg text-custom-blue font-semibold">CorelDraw</p>
       </div>
 
       <!-- Figma -->
@@ -162,12 +161,12 @@
             <circle cx="80" cy="80" r="70" stroke="#a855f7" stroke-width="12" fill="none"
               stroke-dasharray="439.82" stroke-dashoffset="88" stroke-linecap="round"/>
           </svg>
-          <span class="absolute inset-0 flex flex-col items-center justify-center text-white">
+          <span class="absolute inset-0 flex flex-col items-center justify-center text-custom-blue">
             <i class="fab fa-figma text-2xl sm:text-3xl lg:text-4xl mb-1 text-purple-400"></i>
             <span class="text-base sm:text-lg lg:text-xl font-bold">80%</span>
           </span>
         </div>
-        <p class="mt-3 text-sm sm:text-base lg:text-lg text-white font-semibold">Figma</p>
+        <p class="mt-3 text-sm sm:text-base lg:text-lg text-custom-blue font-semibold">Figma</p>
       </div>
 
       <!-- Adobe XD -->
@@ -178,17 +177,127 @@
             <circle cx="80" cy="80" r="70" stroke="#e91e63" stroke-width="12" fill="none"
               stroke-dasharray="439.82" stroke-dashoffset="132" stroke-linecap="round"/>
           </svg>
-          <span class="absolute inset-0 flex flex-col items-center justify-center text-white">
+          <span class="absolute inset-0 flex flex-col items-center justify-center text-custom-blue">
             <i class="fas fa-bezier-curve text-2xl sm:text-3xl lg:text-4xl mb-1 text-pink-400"></i>
             <span class="text-base sm:text-lg lg:text-xl font-bold">70%</span>
           </span>
         </div>
-        <p class="mt-3 text-sm sm:text-base lg:text-lg text-white font-semibold">Adobe XD</p>
+        <p class="mt-3 text-sm sm:text-base lg:text-lg text-custom-blue font-semibold">Adobe XD</p>
       </div>
 
     </div>
   </div>
+<!-- PORTFOLIO -->
+<section id="portfolio" class="w-full bg-custom-blue py-20">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">
+      My Portfolio
+    </h2>
+
+    <!-- Portfolio Grid -->
+    <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+      <!-- Portfolio Item: AlphaX -->
+      <a href="alphaX.html" class="relative rounded-lg overflow-hidden shadow-lg cursor-pointer group block">
+        <div class="w-full h-64 flex items-center justify-center">
+          <img src="./image/AlphaX.png" alt="AlphaX Design"
+            class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
+        </div>
+        <div class="absolute bottom-2 left-2 bg-white/90 text-black font-semibold rounded px-2 py-0.5
+                    opacity-0 group-hover:opacity-100 transition duration-300 text-sm">
+          Design campaign for AlphaX
+        </div>
+      </a>
+
+      <!-- Portfolio Item: Kedoli -->
+      <a href="kedolik.html" class="relative rounded-lg overflow-hidden shadow-lg cursor-pointer group block">
+        <div class="w-full h-64 flex items-center justify-center">
+          <img src="./image/kedoli.png" alt="Kedoli Design"
+            class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
+        </div>
+        <div class="absolute bottom-2 left-2 bg-white/90 text-black font-semibold rounded px-2 py-0.5
+                    opacity-0 group-hover:opacity-100 transition duration-300 text-sm">
+          Kedolik_swap flyer designs
+        </div>
+      </a>
+
+      <!-- Portfolio Item: DEX -->
+      <a href="Dex.html" class="relative rounded-lg overflow-hidden shadow-lg cursor-pointer group block">
+        <div class="w-full h-64 flex items-center justify-center">
+          <img src="./image/dex.jpg" alt="DEX Design"
+            class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
+        </div>
+        <div class="absolute bottom-2 left-2 bg-white/90 text-black font-semibold rounded px-2 py-0.5
+                    opacity-0 group-hover:opacity-100 transition duration-300 text-sm">
+          Design for DEX.cc
+        </div>
+      </a>
+
+      <!-- Portfolio Item: Bidask -->
+      <a href="bidasx.html" class="relative rounded-lg overflow-hidden shadow-lg cursor-pointer group block">
+        <div class="w-full h-64 flex items-center justify-center">
+          <img src="./image/bidax.png" alt="Bidask Design"
+            class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
+        </div>
+        <div class="absolute bottom-2 left-2 bg-white/90 text-black font-semibold rounded px-2 py-0.5
+                    opacity-0 group-hover:opacity-100 transition duration-300 text-sm">
+          Bidask Protocol Promotional Designs
+        </div>
+      </a>
+
+      <!-- Portfolio Item: TON-AFRICA -->
+      <a href="ton.html" class="relative rounded-lg overflow-hidden shadow-lg cursor-pointer group block">
+        <div class="w-full h-64 flex items-center justify-center">
+          <img src="./image/TON.png" alt="TON Design"
+            class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
+        </div>
+        <div class="absolute bottom-2 left-2 bg-white/90 text-black font-semibold rounded px-2 py-0.5
+                    opacity-0 group-hover:opacity-100 transition duration-300 text-sm">
+          TON-AFRICA Flyer Designs
+        </div>
+      </a>
+
+      <!-- Portfolio Item: Peravel -->
+      <a href="pav.html" class="relative rounded-lg overflow-hidden shadow-lg cursor-pointer group block">
+        <div class="w-full h-64 flex items-center justify-center">
+          <img src="./image/pav.png" alt="Peravel Design"
+            class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
+        </div>
+        <div class="absolute bottom-2 left-2 bg-white/90 text-black font-semibold rounded px-2 py-0.5
+                    opacity-0 group-hover:opacity-100 transition duration-300 text-sm">
+          Peravel flyer design
+        </div>
+      </a>
+
+      <!-- Portfolio Item: Munia -->
+      <a href="mon.html" class="relative rounded-lg overflow-hidden shadow-lg cursor-pointer group block">
+        <div class="w-full h-64 flex items-center justify-center">
+          <img src="./image/mon.png" alt="Munia Design"
+            class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
+        </div>
+        <div class="absolute bottom-2 left-2 bg-white/90 text-black font-semibold rounded px-2 py-0.5
+                    opacity-0 group-hover:opacity-100 transition duration-300 text-sm">
+          Munia Protocol Thread Designs
+        </div>
+      </a>
+
+      <!-- Portfolio Item: Partnership -->
+      <a href="pat.html" class="relative rounded-lg overflow-hidden shadow-lg cursor-pointer group block">
+        <div class="w-full h-64 flex items-center justify-center">
+          <img src="./image/pat.png" alt="Partnership Design"
+            class="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-105">
+        </div>
+        <div class="absolute bottom-2 left-2 bg-white/90 text-black font-semibold rounded px-2 py-0.5
+                    opacity-0 group-hover:opacity-100 transition duration-300 text-sm">
+          Partnership flyer Designs
+        </div>
+      </a>
+
+    </div>
+  </div>
 </section>
+
+
 
 
 <!-- Footer -->
